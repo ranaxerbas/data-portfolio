@@ -1,0 +1,492 @@
+*{
+    font-family: Verdana, Arial, "sans-serif";
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    display: block;
+    margin-top: 10px;
+}
+
+.nav-container {
+    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    top: 0;
+    width: 100%;
+    padding: 10px 20px;
+    color: #FFFFFF;
+    background-color: #5c636a;
+    z-index: 100;
+    height: 4rem;
+}
+
+.nav-container h2 a {
+    color: #FFFFFF;
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-decoration: none;
+    padding-left: 1.5rem;
+}
+
+.first-nav-right {
+    display: flex;
+    list-style: none;
+    padding-top: 1rem;
+    gap: 2rem;
+    justify-content: space-between;
+}
+
+.first-nav-right ul {
+    display: flex;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.first-nav-right li a {
+    align-items: center;
+    color: #FFFFFF;
+    font-size: 1.3rem;
+    text-decoration: none;
+    padding: 1rem 1rem;
+    text-align: center;
+    white-space: nowrap;
+}
+
+.first-nav-right li a:hover{
+    color: #dc3545;
+}
+
+.newNavigator-menu-panel {
+    position: fixed;
+    top: 0;
+    margin-top: 2rem;
+    right: -300px;
+    width: 250px;
+    height: 100%;
+    background-color: #5c636a;
+    transition: right 0.3s ease-in-out;
+    padding: 1rem;
+    z-index: 20000;
+}
+
+.newNavigator-menu-panel ul {
+    list-style: none;
+    padding: 2rem 0;
+}
+
+.newNavigator-menu-panel a {
+    text-decoration: none;
+    display: block;
+    padding: 0.5rem 0;
+    color: #FFFFFF;
+    font-size: 1.3rem;
+}
+
+.newNavigator-menu-panel a:hover{
+    color: #dc3545;
+}
+
+.newNavigator-menu-panel.active {
+    right: 0;
+}
+
+.section-story{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem 0;
+}
+
+.container{
+    max-width: 1300px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.row {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.photo-story{
+    flex: 1;
+    display: flex;
+    justify-content: flex-start;
+}
+
+.info-story{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.aboutme-title{
+    font-size: 2.2rem;
+    margin-top: 4rem;
+    font-weight: bolder;
+}
+
+.aboutme-photo1, .aboutme-photo3, .aboutme-photo5{
+    width: 100%;
+    height: 100%;
+    max-width: 500px;
+}
+
+.aboutme-photo2,.aboutme-photo7, .aboutme-photo4, .aboutme-photo6{
+    width: 100%;
+    max-height: 400px;
+    max-width: 500px;
+}
+
+.text-me {
+    font-size: 0.9rem;
+    line-height: 1rem;
+    margin: 0;
+}
+
+.text-title{
+    margin-top: 0;
+    margin-bottom: 1rem;
+    font-size: 1.4rem;
+    font-weight: bold;
+    max-width: 600px;
+}
+
+.btn-contact{
+    background-color: #5c636a;
+    border: 2px solid #5c636a;
+    color: #FFFFFF;
+    display: flex;
+    margin: 1rem;
+    padding: 0.2rem 2rem;
+    width: auto;
+    max-width: 200px;
+    border-radius: 25px;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+.btn-contact li{
+    list-style: none;
+}
+
+.btn-contact a{
+    text-decoration: none;
+    color: #FFFFFF;
+    font-size: 1rem;
+}
+.btn-contact:hover,.btn-contact a:hover{
+    color: #5c636a;
+    background-color: #FFFFFF;
+}
+
+.nav-button {
+    background-color: #5c636a;
+    opacity: 80%;
+    color: #FFFFFF;
+    border: none;
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+    padding: 0;
+    box-sizing: border-box;
+    z-index: 10;
+    transition: transform 0.2s ease-in-out;
+}
+
+.section-more{
+    padding: 2rem 0;
+    text-align: center;
+}
+
+.extraTitles{
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+    margin-top: 2rem;
+}
+
+.extraInfo{
+    flex: 1;
+    padding: 1rem;
+    text-align: center;
+}
+
+.extraTitles, .extraInfo h4{
+    font-weight: bold;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+
+.extraInfo p{
+    font-size: 1rem;
+    line-height: 1rem;
+    height: 15px;
+    text-align: center;
+    margin-bottom: 4rem;
+}
+
+.extraInfo h4{
+    font-size: 1.5rem;
+    margin-bottom: 0.6rem;
+}
+
+.section-album {
+    padding: 2rem 0;
+    text-align: center;
+}
+
+.rowExtra {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: center;
+}
+
+.albumImg img {
+    width: 100%;
+    min-height: 400px;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.albumImg {
+    flex: 1 1 calc(30% - 1rem);
+    max-width: calc(35% - 1rem);
+    box-sizing: border-box;
+}
+
+.nav-button ul {
+    list-style: none;
+    align-items: center;
+}
+
+.projects-item-info .nav-button a{
+    text-decoration: none;
+    color: #FFFFFF;
+}
+
+.nav-button:hover, .nav-button a:hover{
+    opacity: 1;
+    transform: scale(1.1);
+    color: #5c636a;
+    background-color: #FFFFFF;
+    border: 2px solid #5c636a;
+}
+
+.nav-button:focus {
+    outline: none;
+}
+
+.nav-button-left, .nav-button-right{
+    padding: 0;
+}
+
+.nav-button-right{
+    padding-left: 3px;
+}
+
+.btn-wrapper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1rem;
+    gap: 1rem;
+}
+
+.hidden-footer{
+    position: absolute;
+    left: 0;
+    width: 100%;
+    background-color: #5c636a;
+    text-align: center;
+    padding: 15px 0;
+    display: flex;
+    transition: transform 0.3s ease;
+    transform: translateY(100%);
+}
+
+.hidden-footer p {
+    margin: 0;
+    color: #FFFFFF;
+    font-size: 15px;
+    flex: 1;
+}
+
+.arrow-up{
+    position: absolute;
+    right: 20px;
+    bottom: 5px;
+    cursor: pointer;
+}
+
+.arrow-up-img{
+    height: 30px;
+    width: 30px;
+    cursor: pointer;
+    transition: transform 0.3s ease-in-out;
+}
+
+.arrow-up-img:hover{
+    transform: scale(1.2);
+}
+
+@media (max-width: 768px) {
+    .first-nav-right {
+        display: none;
+    }
+
+    #newNavigator-button {
+        display: block;
+        cursor: pointer;
+        width: 40px;
+        height: 40px;
+        z-index: 30;
+    }
+
+    section {
+        padding: 5px;
+    }
+
+    .aboutme-photo1, .aboutme-photo3, .aboutme-photo5{
+        width: 100%;
+        height: 100%;
+        max-width: 300px;
+    }
+
+    .aboutme-photo2,.aboutme-photo7, .aboutme-photo4, .aboutme-photo6{
+        width: 100%;
+        max-height: 200px;
+        max-width: 300px;
+    }
+
+    .section-story {
+        flex-direction: column;
+        padding: 1.5rem 0;
+    }
+
+    .aboutme-title {
+        font-size: 1.8rem;
+    }
+
+    .text-title {
+        font-size: 1.2rem;
+        max-width: 500px;
+    }
+
+    .text-me {
+        font-size: 0.7rem;
+        line-height: 1rem;
+    }
+
+    .btn-contact {
+        max-width: 150px;
+        padding: 0.2rem 1.5rem;
+        font-size: 0.9rem;
+    }
+
+    .albumImg {
+        flex: 1 1 calc(30% - 1rem);
+        max-width: calc(40% - 1rem);
+        max-height: calc(5% - 1rem);
+    }
+
+    .albumImg img{
+        max-height: 100px;
+        max-width: 250px;
+    }
+
+}
+
+@media (max-width: 480px) {
+    .section-story {
+        flex-direction: column;
+        padding: 1rem 0;
+    }
+
+    .photo-story, .info-story {
+        flex: 1;
+        display: block;
+        width: 100%;
+    }
+
+    .photo-story img {
+        max-width: 100%;
+        height: auto;
+        margin-bottom: 1rem;
+    }
+
+    .aboutme-title {
+        font-size: 1.5rem;
+        text-align: center;
+    }
+
+    .text-title {
+        font-size: 0.5rem;
+        text-align: center;
+        max-width: 100%;
+    }
+
+    .text-me {
+        font-size: 0.4rem;
+        line-height: 0.6rem;
+        text-align: justify;
+    }
+
+    .btn-contact {
+        max-width: 120px;
+        padding: 0.2rem 1rem;
+        font-size: 0.8rem;
+    }
+
+    .rowExtra {
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+
+    .albumImg {
+        flex: 1 1 20%;
+        max-width: 100%;
+        max-height: 50%;
+    }
+
+    .albumImg img {
+        height: 100px;
+        width: 300px;
+    }
+
+    .nav-button {
+        height: 50px;
+        width: 50px;
+        font-size: 25px;
+    }
+
+    .btn-wrapper {
+        gap: 0.8rem;
+    }
+
+    .extraInfo h4 {
+        font-size: 1.2rem;
+    }
+
+    .extraInfo p {
+        font-size: 0.8rem;
+        line-height: 1rem;
+        height: auto;
+    }
+}
